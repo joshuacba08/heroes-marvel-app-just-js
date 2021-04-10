@@ -288,12 +288,19 @@ header .logo-container img {
 }
 
 .search-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
   padding: 20px;
 }
 
 .search-form .search-input {
   width: 100%;
+  max-width: 600px;
   height: 30px;
   outline: 0;
   border: 0;
