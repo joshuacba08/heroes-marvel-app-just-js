@@ -1,0 +1,310 @@
+@-webkit-keyframes show {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+@keyframes show {
+  from {
+    opacity: 0%;
+  }
+  to {
+    opacity: 100%;
+  }
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: 'Poppins', sans-serif;
+  width: 100%;
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #20202a;
+}
+
+.background-image {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+h2 {
+  font-size: 2.4rem;
+}
+
+h3 {
+  font-size: 2rem;
+}
+
+h4 {
+  font-size: 1.6rem;
+}
+
+.icon {
+  display: inline-block;
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-bottom: 1px solid #ffffff;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  min-height: 70px;
+  min-width: 320px;
+  width: 100%;
+  padding: 5px 0;
+}
+
+header .logo-container {
+  width: 150px;
+}
+
+header .logo-container img {
+  width: 100%;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 2.2rem;
+  font-family: "Marvel", sans-serif;
+  font-weight: 700;
+}
+
+.nav-container li {
+  margin-left: 15px;
+  list-style: none;
+}
+
+.nav-container li a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.home h1 {
+  font-size: 2.4rem;
+  color: #ffffff;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+}
+
+.home p {
+  padding: 0  15px 15px 15px;
+  color: #ffffff;
+  font-size: 1.8rem;
+  font-family: "Marvel", sans-serif;
+  font-weight: 700;
+  text-align: center;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.home .results-page-container {
+  width: 100%;
+  padding: 10px;
+  background-color: #ffc107;
+  margin-bottom: 15px;
+}
+
+.home .leter-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  max-width: 1024px;
+  width: 100%;
+}
+
+.home .leter-container .leter {
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1.6rem;
+  list-style: none;
+  margin-left: 3px;
+  text-transform: capitalize;
+}
+
+.home .leter-container .leter a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.home .leter-container .leter:hover {
+  color: #e74c3c;
+}
+
+.heroes-container {
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (300px)[auto-fill];
+      grid-template-columns: repeat(auto-fill, 300px);
+  gap: 20px;
+}
+
+.heroe-card {
+  width: 100%;
+  height: 340px;
+  -webkit-animation-name: show;
+          animation-name: show;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
+  -webkit-animation-duration: 800ms;
+          animation-duration: 800ms;
+}
+
+.heroe-card img {
+  width: 100%;
+  height: 90%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.heroe-card .heroe-card__name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+  font-family: "Marvel", sans-serif;
+}
+
+.modal-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.9);
+  top: 0;
+  left: 0;
+}
+
+.modal-container .close-modal {
+  position: absolute;
+  top: 10px;
+  font-size: 2.2rem;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.modal-container .modal-container__heroe-card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.modal-container .modal-container__heroe-card .heroe-image-container {
+  max-width: 500px;
+}
+
+.modal-container .modal-container__heroe-card .heroe-image-container img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.modal-container .modal-container__heroe-card .heroe-detail {
+  max-width: 600px;
+  color: #ffffff;
+  font-family: "Marvel", sans-serif;
+  padding: 10px;
+}
+
+.modal-container .modal-container__heroe-card .heroe-detail .heroe-card__name {
+  font-weight: 700;
+  font-size: 2.4rem;
+  margin-bottom: 20px;
+}
+
+.modal-container .modal-container__heroe-card .heroe-detail .heroe-card__description {
+  font-size: 2rem;
+}
+
+.search-form {
+  width: 100%;
+  padding: 20px;
+}
+
+.search-form .search-input {
+  width: 100%;
+  height: 30px;
+  outline: 0;
+  border: 0;
+  border-radius: 5px;
+  font-size: 2rem;
+  margin-left: 5px;
+  -webkit-transition: all 250ms ease-in;
+  transition: all 250ms ease-in;
+}
+
+.search-form .search-input:focus {
+  border: 2px solid #ffc107;
+}
+/*# sourceMappingURL=styles.css.map */

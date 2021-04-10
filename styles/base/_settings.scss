@@ -1,0 +1,30 @@
+//fonts
+$font-marvel:'Marvel', sans-serif;
+$font-poppins: 'Poppins', sans-serif;
+//fonts-size
+$h1:2.4rem;
+$h2:2.2rem;
+$h3:2rem;
+$h4:1.8rem;
+$h5:1.6rem;
+$h6:1.4rem;
+
+//colors
+$just-white: #ffffff;
+$yellow-justice: #ffc107;
+$red-energy: #e74c3c;
+$black-dark: #20202a;
+$grey-negative: #8c8c8e;
+$grey-active: #cacace;
+$black-box: linear-gradient(159deg, #2d2d3a 0%, #2b2b35 100%);
+
+//animations
+
+@keyframes show {
+    from {
+        opacity: 0%;
+    }
+    to {
+        opacity: 100%;
+    }
+}
